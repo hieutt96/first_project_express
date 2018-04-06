@@ -1,0 +1,58 @@
+
+extends layout 
+block content 
+	link(href='/stylesheets/form_transplant.css')
+	h1=title
+	div
+		div.col-lg-12
+			div.col-lg-8
+				div.form-group
+					label(for='minLength') minLength:
+					input#minLength.form-control(type='text', placeholder='min Length' name='minLength')
+				div.form-group
+					label(for='minTime') minTime:
+					input#minTime.form-control(type='text', placeholder='min Time' name='minTime')
+			div.col-lg-4
+				div.col-lg-offset-8
+					button.btn.btn-default#add +
+					button.btn.btn-default#subtr -
+		div.formdata
+			div.form-group.col-lg-12.form
+				div.col-lg-4
+					label steps:
+					input.form-control.steps(type='text', placeholder='steps',required="true")
+				div.col-lg-3
+					label Time:
+					input.form-control.time(type='datetime-local',placeholder='time',required="true")
+				div.col-lg-2
+					label Cost:
+					input.form-control.cost(type='number',placeholder='cost',required="true")
+				div.col-lg-1
+					label IsTransplant:
+					select.form-control.istransplant(required="true")
+						option(value="true") True
+						option(value="false") False
+				div.col-lg-2
+					label Amount:
+					input.amount.form-control(type='number',placeholder='Số Lượng ',required="true")
+			div.form-group.col-lg-12.form
+				div.col-lg-4
+					label steps:
+					input.form-control.steps(type='text', placeholder='steps',required="true")
+				div.col-lg-3
+					label Time:
+					input.form-control.time(type='datetime-local',placeholder='time',required="true")
+				div.col-lg-2
+					label Cost:
+					input.form-control.cost(type='number',placeholder='cost',required="true")
+				div.col-lg-1
+					label IsTransplant:
+					select.form-control.istransplant(required="true")
+						option(value="true") True
+						option(value="false") False
+				div.col-lg-2
+					label Amount:
+					input.amount.form-control(type='number',placeholder='Số Lượng ',required="true")
+		button.btn.btn-primary.col-lg-offset-4.col-lg-3#submit(type='submit') Submit
+		div#results.row
+	script(src='/javascripts/form_transplant.js')

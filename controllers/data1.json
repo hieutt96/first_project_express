@@ -1,0 +1,252 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJp9FTA32rNTERGUudesenghs",
+         "types" : [ "route" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJU8SvORUCNTERtCYCUqP64OY",
+         "types" : [ "airport", "establishment", "point_of_interest" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 21.2121166,
+               "lng" : 105.8355345
+            },
+            "southwest" : {
+               "lat" : 21.032522,
+               "lng" : 105.804529
+            }
+         },
+         "copyrights" : "Dữ liệu bản đồ ©2018 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "23,5 km",
+                  "value" : 23506
+               },
+               "duration" : {
+                  "text" : "26 phút",
+                  "value" : 1573
+               },
+               "end_address" : "Cảng hàng không quốc tế Nội Bài (HAN), Phú Minh, Sóc Sơn, Hà Nội, Việt Nam",
+               "end_location" : {
+                  "lat" : 21.2121166,
+                  "lng" : 105.8061086
+               },
+               "start_address" : "Đào Tấn, Ngọc Khánh, Ba Đình, Hà Nội, Việt Nam",
+               "start_location" : {
+                  "lat" : 21.032522,
+                  "lng" : 105.8088979
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0,4 km",
+                        "value" : 407
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 21.0341712,
+                        "lng" : 105.8054726
+                     },
+                     "html_instructions" : "Đi về hướng \u003cb\u003eTây\u003c/b\u003e lên \u003cb\u003eĐào Tấn\u003c/b\u003e về phía \u003cb\u003eNgõ 36 - Đào Tấn\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Công Ty Tnhh Du Lịch Thương Mại Dịch Vụ Việt (ở phía bên trái)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "g|j_CsxxdSI`@Mz@M~@O~@S`AUv@Wn@w@tAKNqB|C[`@"
+                     },
+                     "start_location" : {
+                        "lat" : 21.032522,
+                        "lng" : 105.8088979
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,6 km",
+                        "value" : 624
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 86
+                     },
+                     "end_location" : {
+                        "lat" : 21.0393206,
+                        "lng" : 105.8070999
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003ephải\u003c/b\u003e tại Trường Mầm non Hướng dương vào \u003cb\u003eĐường Bưởi\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Alice Spa (ở phía bên trái)\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qfk_CecxdSc@HUBYAICMGkGaE}@s@e@Uw@[iASqASWAA?}DJw@?eA?"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0341712,
+                        "lng" : 105.8054726
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,1 km",
+                        "value" : 108
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 21.0402293,
+                        "lng" : 105.8068398
+                     },
+                     "html_instructions" : "Chếch sang \u003cb\u003etrái\u003c/b\u003e tại Phong Lam Shoes Shop về hướng \u003cb\u003eĐường vành đai 2\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "wfl_CkmxdSA@ABE@GBI?iCXG@CBADA@"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0393206,
+                        "lng" : 105.8070999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 173
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 19
+                     },
+                     "end_location" : {
+                        "lat" : 21.0417339,
+                        "lng" : 105.8065192
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003ephải\u003c/b\u003e tại đường giao nhau thứ 1 về hướng \u003cb\u003eĐường vành đai 2\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mll_CwkxdSE?EACCI?cC\\q@J[Fa@LQDE@C?AA"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0402293,
+                        "lng" : 105.8068398
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "77 m",
+                        "value" : 77
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 21.0423347,
+                        "lng" : 105.8061786
+                     },
+                     "html_instructions" : "Đi bên \u003cb\u003etrái\u003c/b\u003e để đi tiếp về hướng \u003cb\u003eĐường vành đai 2\u003c/b\u003e",
+                     "maneuver" : "keep-left",
+                     "polyline" : {
+                        "points" : "yul_CwixdSIFMHWFWFUHQJGJ"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0417339,
+                        "lng" : 105.8065192
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,5 km",
+                        "value" : 515
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 21.0469033,
+                        "lng" : 105.8055348
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003ephải\u003c/b\u003e vào \u003cb\u003eĐường vành đai 2\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qyl_CsgxdSs@Hq@@g@@iA@s@B]@gBBaBDm@DkD\\s@Lw@NwA^"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0423347,
+                        "lng" : 105.8061786
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "8,5 km",
+                        "value" : 8545
+                     },
+                     "duration" : {
+                        "text" : "10 phút",
+                        "value" : 628
+                     },
+                     "end_location" : {
+                        "lat" : 21.1189414,
+                        "lng" : 105.8272974
+                     },
+                     "html_instructions" : "Tiếp tục vào \u003cb\u003eVõ Chí Công\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Đình làng Bưởi (ở phía bên phải)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "cvm_CqcxdS{Cp@{Cx@gDj@aDXi@@_CHo@@{@@}@@cD@kB@iC?aC?wB?wDAgIAsB@}CAa@?aB@mJA[?SAYAo@GSC_@GSEUIOCOGSGMESIOIe@UcCsAWKy@c@_Ai@oBkA{Aw@wAu@cBy@oEuBiAc@sHcDgAa@sAi@yAk@wJuC}LsDqEuAu@[m@[}GoD_GcDMG_CmAsBgAiDgB_GuCqNoHwE_CsEkBi@QcBm@yI_DmMuEkIwCyBu@wT_IwDyAsDqAwDsAsDqAaC{@aBm@eA_@gA]eA[gA[sA]yA_@iAUkAWqAUqASgAQoAOcAMaAKsAMaAG}@GoAI_AEs@Cu@Co@AcAAoAAwA?k@AgA@wB?wA?iA?yC@oA?a@?c@Aa@Ai@?mAGoAE}@Ak@Ac@?w@A_A?oAAa@?cDA"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0469033,
+                        "lng" : 105.8055348
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "13,1 km",
+                        "value" : 13057
+                     },
+                     "duration" : {
+                        "text" : "12 phút",
+                        "value" : 711
+                     },
+                     "end_location" : {
+                        "lat" : 21.2121166,
+                        "lng" : 105.8061086
+                     },
+                     "html_instructions" : "Tiếp tục vào \u003cb\u003eVõ Nguyên Giáp\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua HANOITRANS Car Rental Joint Stock Company (ở bên phải cách 350&nbsp;m)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "kx{_Csk|dSU?wB?aGAoL@gQEsK?_MLi@Bw@HI@oARMDQDQDi@NeBv@qBtA}A|AcBfByIxI}ErEKJMJmDfDoE~DmDfByDbAwCb@cEFy^CyE?K?M?gRAaDAmCAoAAu@?aB?yAAcB@aDAkC?oJ?mHC_GA_A@{@@kAAkBAsAEyAI_AKk@GSCaCYwASsBa@[KcCm@aCw@eEeBkJaEc@SoCiAsi@kUwFcC{DeBo@Wo@YuGqCwXmLaEcBYM[M}As@_Bu@[M[KqIsDcMoFqImDmBq@uBk@g@Ii@KiBUw@Ec@C_B?{A?sBLu@L}@Py@PiC~@mClAC@oGtCwC|Am@\\cAt@{@t@y@v@cBxB_AvAEJMXMXMZo@tB{DlRETGXmPd}@UpAy@jEEXeAxFy@bEkCjNc@|BOt@kAfGMt@WjAcBlI"
+                     },
+                     "start_location" : {
+                        "lat" : 21.1189414,
+                        "lng" : 105.8272974
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "g|j_CsxxdSu@|ES`AUv@Wn@w@tA}BlD[`@c@Ho@@ICyGiE}@s@e@Uw@[iASqASWA_EJ}B?CDMDsCXKDCFKAMCuDh@uA\\EAWPo@Ng@TGJs@HyABcGJoCJ_Fj@oCn@wHjBgDj@aDXiDJkBBaFBoN@_OCqG?cC@iKAm@CcAKyA[eA_@u@_@cCsAWKyBmAkEcC{DoByGyCsHcDgAa@mDuAuXiIqEuAu@[kIkEmGkDsFuCiL}FiUoLsEkBi@Q}LmEyWmJqXuJwDyAsDqAkJeDcFiBmC}@mCw@mD}@uCm@cDi@wCa@eCYuCUaG[yFIcI?kK@qCCgGQkFCsIAqT?{]E_MLi@BaAJ}AXc@Ji@NeBv@qBtA}A|A}L`MiF~E{DrDoE~DmDfByDbAwCb@cEFy^CeF?uRAuLEaMA{N?mPE{BBwDCmDOkBSuC]wASsBa@_Dy@aCw@eEeBoKuEcn@uWsLiF_Bq@ih@qTuFeCmJ_EcMoFqImDmBq@uBk@qAUiBUw@Ec@C_B?{A?sBLsB^y@PiC~@qCnAoGtCwC|AqBrAuBlBcBxB_AvASd@[t@o@tB{DlRMn@cS|fA_C|LoDhRaC~LcBlI"
+         },
+         "summary" : "Võ Chí Công và Võ Nguyên Giáp",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK",
+   "time" : ""
+}

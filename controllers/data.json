@@ -1,0 +1,275 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJp9FTA32rNTERGUudesenghs",
+         "types" : [ "route" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJU8SvORUCNTERtCYCUqP64OY",
+         "types" : [ "airport", "establishment", "point_of_interest" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 21.2121166,
+               "lng" : 105.8355345
+            },
+            "southwest" : {
+               "lat" : 21.0109436,
+               "lng" : 105.7982124
+            }
+         },
+         "copyrights" : "Dữ liệu bản đồ ©2018 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "28,3 km",
+                  "value" : 28278
+               },
+               "duration" : {
+                  "text" : "40 phút",
+                  "value" : 2428
+               },
+               "end_address" : "Cảng hàng không quốc tế Nội Bài (HAN), Phú Minh, Sóc Sơn, Hà Nội, Việt Nam",
+               "end_location" : {
+                  "lat" : 21.2121166,
+                  "lng" : 105.8061086
+               },
+               "start_address" : "Thái Hà, Đống Đa, Hà Nội, Việt Nam",
+               "start_location" : {
+                  "lat" : 21.0130764,
+                  "lng" : 105.8198854
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0,1 km",
+                        "value" : 130
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 21.013772,
+                        "lng" : 105.8188861
+                     },
+                     "html_instructions" : "Đi về hướng \u003cb\u003eTây Bắc\u003c/b\u003e lên \u003cb\u003eThái Hà\u003c/b\u003e về phía \u003cb\u003eNgõ 178 Thái Hà\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Công Ty CP DECOTRA (ở phía bên trái)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "wbg_Ci}zdSQX_@h@Yr@}@nA"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0130764,
+                        "lng" : 105.8198854
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 219
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 45
+                     },
+                     "end_location" : {
+                        "lat" : 21.0152422,
+                        "lng" : 105.8202843
+                     },
+                     "html_instructions" : "Tại NTQ Vest, từ \u003cb\u003eThái Hà\u003c/b\u003e rẽ \u003cb\u003ephải\u003c/b\u003e để đến \u003cb\u003eHoàng Cầu Mới\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua LẨU HẤP TÂN HOÀNG GIA (ở phía bên phải)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "agg_CawzdSsAsAcAy@mCgC"
+                     },
+                     "start_location" : {
+                        "lat" : 21.013772,
+                        "lng" : 105.8188861
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 km",
+                        "value" : 247
+                     },
+                     "duration" : {
+                        "text" : "1 phút",
+                        "value" : 71
+                     },
+                     "end_location" : {
+                        "lat" : 21.0138996,
+                        "lng" : 105.8187078
+                     },
+                     "html_instructions" : "Vòng \u003cb\u003engược lại\u003c/b\u003e tại Ốc Béo quán\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Nước tih khiết quận thanh xuân (ở phía bên phải)\u003c/div\u003e",
+                     "maneuver" : "uturn-left",
+                     "polyline" : {
+                        "points" : "gpg_Cw_{dS_@b@dDzCx@v@p@l@XR"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0152422,
+                        "lng" : 105.8202843
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,5 km",
+                        "value" : 480
+                     },
+                     "duration" : {
+                        "text" : "2 phút",
+                        "value" : 137
+                     },
+                     "end_location" : {
+                        "lat" : 21.0165256,
+                        "lng" : 105.815038
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003ephải\u003c/b\u003e tại Bencomputer- Dell Store vào \u003cb\u003eThái Hà\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Cà Phê Lan Anh (ở phía bên trái)\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{gg_C}uzdSY`@y@hA_A|AoBpCc@p@a@p@w@xAY^GHg@x@aA~A"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0138996,
+                        "lng" : 105.8187078
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,8 km",
+                        "value" : 773
+                     },
+                     "duration" : {
+                        "text" : "3 phút",
+                        "value" : 181
+                     },
+                     "end_location" : {
+                        "lat" : 21.0109436,
+                        "lng" : 105.8109701
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003etrái\u003c/b\u003e tại Công Ty Cổ Phần Năng Lượng vào \u003cb\u003eLáng Hạ\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Tiệc cưới Minh Tuấn- Hồng Ngọc (ở phía bên trái)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ixg_C__zdSMVEJ~@f@tAz@dB|@`@PhAp@hE`CVNpBhAhBdArCvBfC`Bn@f@"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0165256,
+                        "lng" : 105.815038
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2,4 km",
+                        "value" : 2436
+                     },
+                     "duration" : {
+                        "text" : "7 phút",
+                        "value" : 432
+                     },
+                     "end_location" : {
+                        "lat" : 21.0276931,
+                        "lng" : 105.7997561
+                     },
+                     "html_instructions" : "Rẽ \u003cb\u003ephải\u003c/b\u003e tại Cửa Hàng An Phước vào \u003cb\u003eĐường Láng\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Công Ty Tnhh Ánh Sáng Tianshi (ở phía bên trái)\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kuf_CqeydSIL_CtDgBrC_CvDY`@eA`Ba@r@oApBU\\eAtASTaCjCYXo@p@MJ?@QL?@IFm@p@Y\\qAhAa@Xs@h@kDrBiAj@kBx@iChAi@TkCjASHWLKDq@Zw@`@_CfAa@Vm@`@kBjB}A`BsBdCwAdBKHMHWL[Hi@LY?g@E[Cu@Ky@S}@Yq@[_B}@eAi@w@o@}@}@"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0109436,
+                        "lng" : 105.8109701
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2,4 km",
+                        "value" : 2391
+                     },
+                     "duration" : {
+                        "text" : "3 phút",
+                        "value" : 186
+                     },
+                     "end_location" : {
+                        "lat" : 21.0469033,
+                        "lng" : 105.8055348
+                     },
+                     "html_instructions" : "Chếch sang \u003cb\u003etrái\u003c/b\u003e tại Ding Tea vào \u003cb\u003eĐường vành đai 2\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "a~i_Co_wdSWKQM{FeFkFmEeB{AwE}DYY_Ak@mAu@kAu@iBcAgBcAcBaA}AeA{AaAsA{@_@Qq@[]Mc@MYISEa@G]EYE]AWAk@AqAA_B?oADm@D[D}@P_BZcF~@s@Jw@Fo@Ds@Hq@@g@@iA@s@B]@gBBaBDm@DkD\\s@Lw@NwA^"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0276931,
+                        "lng" : 105.7997561
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "8,5 km",
+                        "value" : 8545
+                     },
+                     "duration" : {
+                        "text" : "10 phút",
+                        "value" : 628
+                     },
+                     "end_location" : {
+                        "lat" : 21.1189414,
+                        "lng" : 105.8272974
+                     },
+                     "html_instructions" : "Tiếp tục vào \u003cb\u003eVõ Chí Công\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua Đình làng Bưởi (ở phía bên phải)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "cvm_CqcxdS{Cp@{Cx@gDj@aDXi@@_CHo@@{@@}@@cD@kB@iC?aC?wB?wDAgIAsB@}CAa@?aB@mJA[?SAYAo@GSC_@GSEUIOCOGSGMESIOIe@UcCsAWKy@c@_Ai@oBkA{Aw@wAu@cBy@oEuBiAc@sHcDgAa@sAi@yAk@wJuC}LsDqEuAu@[m@[}GoD_GcDMG_CmAsBgAiDgB_GuCqNoHwE_CsEkBi@QcBm@yI_DmMuEkIwCyBu@wT_IwDyAsDqAwDsAsDqAaC{@aBm@eA_@gA]eA[gA[sA]yA_@iAUkAWqAUqASgAQoAOcAMaAKsAMaAG}@GoAI_AEs@Cu@Co@AcAAoAAwA?k@AgA@wB?wA?iA?yC@oA?a@?c@Aa@Ai@?mAGoAE}@Ak@Ac@?w@A_A?oAAa@?cDA"
+                     },
+                     "start_location" : {
+                        "lat" : 21.0469033,
+                        "lng" : 105.8055348
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "13,1 km",
+                        "value" : 13057
+                     },
+                     "duration" : {
+                        "text" : "12 phút",
+                        "value" : 711
+                     },
+                     "end_location" : {
+                        "lat" : 21.2121166,
+                        "lng" : 105.8061086
+                     },
+                     "html_instructions" : "Tiếp tục vào \u003cb\u003eVõ Nguyên Giáp\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eBăng qua HANOITRANS Car Rental Joint Stock Company (ở bên phải cách 350&nbsp;m)\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "kx{_Csk|dSU?wB?aGAoL@gQEsK?_MLi@Bw@HI@oARMDQDQDi@NeBv@qBtA}A|AcBfByIxI}ErEKJMJmDfDoE~DmDfByDbAwCb@cEFy^CyE?K?M?gRAaDAmCAoAAu@?aB?yAAcB@aDAkC?oJ?mHC_GA_A@{@@kAAkBAsAEyAI_AKk@GSCaCYwASsBa@[KcCm@aCw@eEeBkJaEc@SoCiAsi@kUwFcC{DeBo@Wo@YuGqCwXmLaEcBYM[M}As@_Bu@[M[KqIsDcMoFqImDmBq@uBk@g@Ii@KiBUw@Ec@C_B?{A?sBLu@L}@Py@PiC~@mClAC@oGtCwC|Am@\\cAt@{@t@y@v@cBxB_AvAEJMXMXMZo@tB{DlRETGXmPd}@UpAy@jEEXeAxFy@bEkCjNc@|BOt@kAfGMt@WjAcBlI"
+                     },
+                     "start_location" : {
+                        "lat" : 21.1189414,
+                        "lng" : 105.8272974
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wbg_Ci}zdSq@bAYr@}@nAsAsAcAy@mCgC_@b@~ErEjA`AsAjB_A|AoBpCeAbBw@xAY^o@bAoAvBEJ~@f@zDxBjBbA`FpCzEnCrCvBfC`Bn@f@ILgFhIaGnJeBnCyAjByEbF[XgAnAsBbBs@h@kDrBuDdBsItDmCpA_CfAa@Vm@`@kBjB}A`BsBdCcBnBe@VeAVaAEqAOwBm@qCyAeAi@w@o@}@}@WKmGsFqIiHqFwEmCaBuDyBkEeCyDgCsBmAoAi@}@WmBYsDGoDDiAJ}Cl@wGjAgBLs@Hq@@qBBqADiEHyEb@kB\\sFpA{Cx@gDj@kEZiHN{OBkVAoSAo@AiAIs@Ki@OaAYc@SiDiBqAo@oDuBsDmBsHoD}JgE{CkAyAk@wJuCoSiGcBw@}OsIkLeG_GuCqNoHwE_CsEkBmC_AgXuJeMmEwT_IwDyAkJeDuHmCgDmAmCy@{Cy@cDu@}Cm@yCe@sC]uCYoG_@}EK{GAsL@wDCeGOgECkHCyJAoL@gQEsK?_MLaBLyAT_@J{@TeBv@qBtAaEdEyIxI}ErEYV}JfJmDfByDbAwCb@cEFse@CY?iWC}ECuI?mHA}SCgM?_EGyCUyGy@oCm@cCm@aCw@qPgHsD}Akq@oYkF}B_i@}TsFeCmY}LqImDmBq@}Cu@sCa@{AI{D?sBLu@LwBb@iC~@mClAsGvCeEzBcAt@{@t@y@v@cBxBeAbB[r@}@pCaEbSeS|fAkArGeEnTmCpN{BxK"
+         },
+         "summary" : "Võ Chí Công và Võ Nguyên Giáp",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK",
+   "time" : ""
+}
