@@ -28,8 +28,8 @@ $("#submit").on('click',function(){
 		dataType: 'json',
 		data : data,
 		url : "/api/ride_share_mapping",
-		success: function(){
-
+		success: function(data){
+			
 		},
 		error:function(){
 			

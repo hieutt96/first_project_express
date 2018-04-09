@@ -30,9 +30,10 @@ var http = require('http');
 						}
 						var dj = new Date(ticketList[j].time);
 						if( i!=j && (ticketList[j].merged == 'false') && !check_j){
-							if( Math.abs(ticketList[i].time - ticketList[j].time) < this.minTime) {
+							if( Math.abs(ticketList[i].time - ticketList[j].time) < 30*60000) {
 							var min = this.find_min(ticketList[i].data, ticketList[j].data);
 							var time = min.min_start.time;
+							// console.log(min.min_start.length);
 							if(min.min_start.length <= this.minLength && min.min_end.length <= this.minLength) {															
 								var k = 0;
 								
@@ -41,11 +42,11 @@ var http = require('http');
 									k++;
 								}
 								while(ticketList[i]['data'][k].marker == min.min_start.end);
-										if(time < this.minTime){
+										if(time < this.minTime*60000){
 											if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
 											{
 												if( ticketList[i].cost + ticketList[j].cost >= 210000){
-													temp.push({ trip : j ,data : min });
+													temp.push( { trip:i },{ trip : j ,data : min });
 													arrayTemp.push(j);
 													amount += parseInt(ticketList[j].amount);
 												}
@@ -53,7 +54,7 @@ var http = require('http');
 											else if((di.getHours() > 8 && (di.getHours() <= 16 && di.getMinutes() < 31) ) || (dj.getHours() > 8 && (dj.getHours() <= 16 && dj.getMinutes() < 31) ))
 											{
 												if( ticketList[i].cost + ticketList[j].cost >= 200000){
-													temp.push({ trip : j ,data : min });
+													temp.push( { trip:i },{ trip : j ,data : min });
 													arrayTemp.push(j);
 													amount += parseInt(ticketList[j].amount);
 												}
@@ -61,7 +62,7 @@ var http = require('http');
 											else
 											{
 												if( ticketList[i].cost + ticketList[j].cost >= 180000){
-													temp.push({ trip : j ,data : min });
+													temp.push( { trip:i },{ trip : j ,data : min });
 													arrayTemp.push(j);
 													amount += parseInt(ticketList[j].amount);
 												}
@@ -75,7 +76,6 @@ var http = require('http');
 			}
 			if(temp.length){
 				stats[stats.length] = {
-					trip :i ,
 					trip_transplant : temp
 				}
 				arrayTemp.push(i);

@@ -32,17 +32,18 @@ exports.post_trip_transplant = [
 		var amount = algorithm.transplant(array).amount;
 		// console.log(n);
 		for(var i = 0 ;i < n.length ;i++){
-			var str = n[i].trip;
-			for(var j=0 ; j < n[i].trip_transplant.length ; j++){
-				str += ',' + n[i].trip_transplant[j].trip;
+			var str = '';
+			for(var j = 0 ; j < n[i].trip_transplant.length ; j++){
+				str += n[i].trip_transplant[j].trip + ',';
 			}
 			data[data.length] = {
 					trip : str,
 					tongSoKhach : amount[i],
-					detail : n[i],
+					detail : n[i].trip_transplant,
 			}
 		}
-		console.log(data);
+		// console.log(data);
+		res.send(JSON.stringify(data));
 		// res.redirect('/api/ride_share_mapping');
 	}
 ]
