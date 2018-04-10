@@ -3,6 +3,8 @@ var http = require('http');
 	exports.minLength = 0;
 	exports.transplant = function (ticketList){
 		var amountArray = [];
+		var start_location = [];
+		var end_location = [];
 		var arrayTemp = [];
 		var stats = [];
 		for(var i = 0; i < ticketList.length; i++) {
@@ -33,7 +35,6 @@ var http = require('http');
 							if( Math.abs(ticketList[i].time - ticketList[j].time) < 30*60000) {
 							var min = this.find_min(ticketList[i].data, ticketList[j].data);
 							var time = min.min_start.time;
-							// console.log(min.min_start.length);
 							if(min.min_start.length <= this.minLength && min.min_end.length <= this.minLength) {															
 								var k = 0;
 								
@@ -81,9 +82,11 @@ var http = require('http');
 				arrayTemp.push(i);
 				amount += parseInt(ticketList[i].amount);
 				amountArray[amountArray.length] = amount;
+				start_location[start_location.length] = this.get_start_location(ticketList[i]);
+				end_location[end_location.length] = this.get_end_location(ticketList[i]);
 			}
 		}
-	return {stats: stats, amount : amountArray};
+	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
 	},
 
 	exports.assignSteps = function (time, steps, merged, cost, amount) {	 
@@ -156,4 +159,42 @@ var http = require('http');
 
 	exports.rad = function rad(x) {
 	    return x * Math.PI / 180;
+	}
+
+	exports.get_start_location = function (ticket){
+		return ticket.data[0].marker;
+	}
+
+	exports.get_end_location = function (ticket) {
+		return ticket.data[ticket.data.length-1].marker;
+	}
+
+	exports.get_transplant_driver = function (amount, start_location, end_location, drivers){
+		var driver = '';
+		var min = 0;
+		if(drivers.length){
+			for(var i = 0 ; i < drivers.length ; i++){
+				var minTemp_start = this.distance(start_location,drivers[0].home_location);
+				var minTemp_end = this.distance(end_location,drivers[0].home_location);
+				var minTemp = this.distance(start_location,drivers[0].location);
+				if(drivers[i].receive == true){
+					if(amount < drivers[i].loaixe){
+						if(drivers[i].status == 1){
+							if(this.distance(start_location,drivers[i].home_location) <= minTemp_start){
+								driver = drivers[i];
+							}
+						}else if(drivers[i].status == 2){
+							if(this.distance(end_location,drivers[i].home_location) <= minTemp_end){
+								driver = drivers[i];
+							}
+						}else{
+							if(this.distance(start_location,drivers[i].location) <= minTemp){
+								driver = drivers[i];
+							}
+						}
+					}
+				}
+			}
+		}
+		return driver;
 	}

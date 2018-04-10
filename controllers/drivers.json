@@ -1,0 +1,28 @@
+[
+	{
+		"location" : {
+            "lat" : 21.0276931,
+            "lng" : 105.7997562
+         },
+		"loaixe": 20,
+		"home_location": {
+            "lat" : 21.0276933,
+            "lng" : 105.7997582
+         },
+		"status" : 2,
+		"receive" :true
+	},
+	{
+		"location" : {
+            "lat" : 21.0276938,
+            "lng" : 105.7997522
+         },
+		"loaixe": 20,
+		"home_location": {
+            "lat" : 21.0276952,
+            "lng" : 105.7997558
+         },
+		"status" : 2,
+		"receive" :true
+	}
+]

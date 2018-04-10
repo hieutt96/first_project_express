@@ -1,10 +1,10 @@
 $("#submit").on('click',function(){
-	// console.log("hieu");
 	$("#results").empty();
 	var n = $(".form").length;
 	var data_temp = [];
 	var minLength = $("#minLength").val();
 	var minTime = $("#minTime").val();
+	var drivers = $("#drivers").val();
 	$(".form").each(function(){
 		var steps = $(this).find(".steps").val();
 		var temp_time = $(this).find(".time").val();
@@ -20,9 +20,7 @@ $("#submit").on('click',function(){
 			'amount' : amount,
 		});
 	});
-	// console.log(data);
-	var data = { data:data_temp , minTime : minTime, minLength: minLength };
-	// console.log(data);
+	var data = { data:data_temp , minTime : minTime, minLength: minLength, drivers : drivers };
 	$.ajax({
 		type : 'post',
 		dataType: 'json',
