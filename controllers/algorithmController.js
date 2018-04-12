@@ -87,7 +87,7 @@ var http = require('http');
 			}
 		}
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
-	},
+	}
 
 	exports.assignSteps = function (time, steps, merged, cost, amount) {	 
 		var data = [];
@@ -110,7 +110,7 @@ var http = require('http');
 			}
 		}
 		return { time: time,data: data, merged: merged, cost :cost, amount : amount} ;
-	},
+	}
 
 	exports.find_min = function (data, data1){
 		var start_location_transplant = data1[0].marker; 	
@@ -143,7 +143,7 @@ var http = require('http');
 			}
 		}	
 		return stats;
-	},
+	}
 
 	exports.distance = function (p1, p2) {
 		var R = 6378137; 
@@ -155,7 +155,7 @@ var http = require('http');
 		var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 		var d = R * c;
 		return d;
-	},
+	}
 
 	exports.rad = function rad(x) {
 	    return x * Math.PI / 180;
@@ -171,7 +171,6 @@ var http = require('http');
 
 	exports.get_transplant_driver = function (amount, start_location, end_location, drivers){
 		var driver = '';
-		var min = 0;
 		if(drivers.length){
 			for(var i = 0 ; i < drivers.length ; i++){
 				var minTemp_start = this.distance(start_location,drivers[0].home_location);

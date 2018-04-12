@@ -34,8 +34,8 @@ exports.post_trip_transplant = [
 		var end_location = algorithm.transplant(array).end_location;
 		for(var i = 0 ;i < n.length ;i++){
 			var str = '';
-			for(var j = 0 ; j < n[i].trip_transplant.length ; j++){
-				str += n[i].trip_transplant[j].trip + ',';
+			for(var a = 0 ; a < n[i].trip_transplant.length ; a++){
+				str += n[i].trip_transplant[a].trip + ',';
 			}
 			data[data.length] = {
 					trip : str,
