@@ -1,0 +1,21 @@
+SonarQube plugins:
+  - C# 5.0 (csharp)
+  - Java 3.13.1 (java)
+  - SVN 1.3 (scmsvn)
+  - Git 1.2 (scmgit)
+  - JavaScript 2.11 (javascript)
+Global properties:
+  - sonar.core.id=20180411115611
+  - sonar.core.startTime=2018-04-11T11:56:11+0700
+  - sonar.core.version=5.6
+  - sonar.permission.template.default=default_template
+  - sonar.qualitygate=1
+Settings for module: org.sonarqube:taxi
+  - sonar.language=js
+  - sonar.projectBaseDir=D:\express\first_project_express
+  - sonar.projectKey=org.sonarqube:taxi
+  - sonar.projectName=Taxi Airport
+  - sonar.projectVersion=1.0
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=controllers
+  - sonar.working.directory=D:\express\first_project_express\.sonar

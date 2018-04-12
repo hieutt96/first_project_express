@@ -1,0 +1,6 @@
+projectKey=org.sonarqube:taxi
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:taxi
+ceTaskId=AWK4s0D-hE66b2fVFbU0
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWK4s0D-hE66b2fVFbU0
