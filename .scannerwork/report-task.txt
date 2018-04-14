@@ -2,5 +2,5 @@ projectKey=org.sonarqube:taxi
 serverUrl=http://localhost:9000
 serverVersion=7.0.0.36138
 dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:taxi
-ceTaskId=AWK-q_8hpcBNHB-SnTg2
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWK-q_8hpcBNHB-SnTg2
+ceTaskId=AWLCOp4GtZkfT8FCkPvh
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWLCOp4GtZkfT8FCkPvh

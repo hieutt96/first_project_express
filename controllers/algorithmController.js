@@ -17,7 +17,6 @@ var http = require('http');
 				if(ticketList[i].merged == 'false'){
 					for(var j = 0; j < ticketList.length; j++){
 						var check_j = this.check(j, arrayTemp);
-
 						var dj = new Date(ticketList[j].time);
 						if( i!=j && (ticketList[j].merged == 'false') && !check_j){
 							if( Math.abs(ticketList[i].time - ticketList[j].time) < 30*60000) {
@@ -41,14 +40,7 @@ var http = require('http');
 				}
 			}
 			if(temp.length){
-				stats[stats.length] = {
-					trip_transplant : temp
-				}
-				arrayTemp.push(i);
-				amount += parseInt(ticketList[i].amount);
-				amountArray[amountArray.length] = amount;
-				start_location[start_location.length] = this.get_start_location(ticketList[i]);
-				end_location[end_location.length] = this.get_end_location(ticketList[i]);
+				this.get_total_guest(stats,arrayTemp,amount,ticketList[i],amountArray,start_location,end_location );
 			}
 		}
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
@@ -200,4 +192,15 @@ var http = require('http');
 				amount += parseInt(ticketList_j.amount);
 			}
 		}
+	}
+
+	exports.get_total_guest = function (stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location ){
+				stats[stats.length] = {
+					trip_transplant : temp
+				}
+				arrayTemp.push(i);
+				amount += parseInt(ticketList.amount);
+				amountArray[amountArray.length] = amount;
+				start_location[start_location.length] = this.get_start_location(ticketList[i]);
+				end_location[end_location.length] = this.get_end_location(ticketList[i]);
 	}
