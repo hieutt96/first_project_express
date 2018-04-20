@@ -1,7 +1,6 @@
 var http = require('http');
 	exports.minTime = 0;
 	exports.minLength = 0;
-
 	exports.transplant = function (ticketList){
 		var amountArray = [];
 		var start_location = [];
@@ -12,11 +11,11 @@ var http = require('http');
 			var di = new Date(parseInt(ticketList[i].time));
 			var temp = [];
 			var amount = 0;
-			var check_i = this.check(i, arrayTemp);
+			var check_i = this.check(i ,arrayTemp);
 			if(!check_i){
 				if(ticketList[i].merged == 'false'){
 					for(var j = 0; j < ticketList.length; j++){
-						var check_j = this.check(j, arrayTemp);
+						var check_j = this.check(j ,arrayTemp);
 						var dj = new Date(ticketList[j].time);
 						if( i!=j && (ticketList[j].merged == 'false') && !check_j){
 							if( Math.abs(ticketList[i].time - ticketList[j].time) < 30*60000) {
@@ -31,7 +30,31 @@ var http = require('http');
 								}
 								while(ticketList[i]['data'][k].marker == min.min_start.end);
 										if(time < this.minTime*60000){
-											this.check_time(di, dj, ticketList[i] , ticketList[j], temp, i, j ,min, arrayTemp, amount);
+											var cost = ticketList[i].cost + ticketList[j].cost ;
+											if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
+											{
+												if( cost >= 210000){
+													temp.push({ trip : j ,data : min });
+													arrayTemp.push(j);
+													amount += parseInt(ticketList[j].amount);
+												}
+											}
+											else if((di.getHours() > 8 && (di.getHours() <= 16 && di.getMinutes() < 31) ) || (dj.getHours() > 8 && (dj.getHours() <= 16 && dj.getMinutes() < 31) ))
+											{
+												if( cost >= 200000){
+													temp.push({ trip : j ,data : min });
+													arrayTemp.push(j);
+													amount += parseInt(ticketList[j].amount);
+												}
+											}
+											else
+											{
+												if( cost >= 180000){
+													temp.push({ trip : j ,data : min });
+													arrayTemp.push(j);
+													amount += parseInt(ticketList[j].amount);
+												}
+											}
 										}
 								}
 							}
@@ -40,9 +63,18 @@ var http = require('http');
 				}
 			}
 			if(temp.length){
-				this.get_total_guest(stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location, temp, i);
+				temp.push({trip : i});
+				stats[stats.length] = {
+					trip_transplant : temp
+				}
+				arrayTemp.push(i);
+				amount += parseInt(ticketList[i].amount);
+				amountArray[amountArray.length] = amount;
+				start_location[start_location.length] = this.get_start_location(ticketList[i]);
+				end_location[end_location.length] = this.get_end_location(ticketList[i]);
 			}
 		}
+		console.log(arrayTemp);
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
 	}
 
@@ -155,52 +187,13 @@ var http = require('http');
 		return driver;
 	}
 
-	exports.check = function(check, arrayTemp){
-		if(arrayTemp.length){
-				for(var temp_i = 0 ; temp_i < arrayTemp.length; temp_i++){
-					if(arrayTemp[temp_i] == check){
-						return true;
-					}
+	exports.check = function(check , array){
+		if(array.length){
+			for(var i = 0 ; i < array.length; i++){
+				if(array[i] == check){
+					return true;
 				}
 			}
+		}
 		return false;
-	}
-
-	exports.check_time = function(di, dj, ticketList_i , ticketList_j, temp, i, j ,min, arrayTemp, amount){
-		var cost = ticketList_i.cost + ticketList_j.cost;
-		if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
-		{
-			if( cost >= 210000){
-				temp.push( { trip:i },{ trip : j ,data : min });
-				arrayTemp.push(j);
-				amount += parseInt(ticketList_j.amount);
-			}
-		}
-		else if((di.getHours() > 8 && (di.getHours() <= 16 && di.getMinutes() < 31) ) || (dj.getHours() > 8 && (dj.getHours() <= 16 && dj.getMinutes() < 31) ))
-		{
-			if( cost >= 200000){
-				temp.push( { trip:i },{ trip : j ,data : min });
-				arrayTemp.push(j);
-				amount += parseInt(ticketList_j.amount);
-			}
-		}
-		else
-		{
-			if( cost >= 180000){
-				temp.push( { trip:i },{ trip : j ,data : min });
-				arrayTemp.push(j);
-				amount += parseInt(ticketList_j.amount);
-			}
-		}
-	}
-
-	exports.get_total_guest = function (stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location, temp, i ){
-				stats[stats.length] = {
-					trip_transplant : temp
-				}
-				arrayTemp.push(i);
-				amount += parseInt(ticketList.amount);
-				amountArray[amountArray.length] = amount;
-				start_location[start_location.length] = this.get_start_location(ticketList[i]);
-				end_location[end_location.length] = this.get_end_location(ticketList[i]);
 	}

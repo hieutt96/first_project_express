@@ -1,30 +1,4 @@
-{
-   "geocoded_waypoints" : [
-      {
-         "geocoder_status" : "OK",
-         "place_id" : "ChIJp9FTA32rNTERGUudesenghs",
-         "types" : [ "route" ]
-      },
-      {
-         "geocoder_status" : "OK",
-         "place_id" : "ChIJU8SvORUCNTERtCYCUqP64OY",
-         "types" : [ "airport", "establishment", "point_of_interest" ]
-      }
-   ],
-   "routes" : [
-      {
-         "bounds" : {
-            "northeast" : {
-               "lat" : 21.2121166,
-               "lng" : 105.8355345
-            },
-            "southwest" : {
-               "lat" : 21.0109436,
-               "lng" : 105.7982124
-            }
-         },
-         "copyrights" : "Dữ liệu bản đồ ©2018 Google",
-         "legs" : [
+[
             {
                "distance" : {
                   "text" : "28,3 km",
@@ -261,15 +235,4 @@
                "traffic_speed_entry" : [],
                "via_waypoint" : []
             }
-         ],
-         "overview_polyline" : {
-            "points" : "wbg_Ci}zdSq@bAYr@}@nAsAsAcAy@mCgC_@b@~ErEjA`AsAjB_A|AoBpCeAbBw@xAY^o@bAoAvBEJ~@f@zDxBjBbA`FpCzEnCrCvBfC`Bn@f@ILgFhIaGnJeBnCyAjByEbF[XgAnAsBbBs@h@kDrBuDdBsItDmCpA_CfAa@Vm@`@kBjB}A`BsBdCcBnBe@VeAVaAEqAOwBm@qCyAeAi@w@o@}@}@WKmGsFqIiHqFwEmCaBuDyBkEeCyDgCsBmAoAi@}@WmBYsDGoDDiAJ}Cl@wGjAgBLs@Hq@@qBBqADiEHyEb@kB\\sFpA{Cx@gDj@kEZiHN{OBkVAoSAo@AiAIs@Ki@OaAYc@SiDiBqAo@oDuBsDmBsHoD}JgE{CkAyAk@wJuCoSiGcBw@}OsIkLeG_GuCqNoHwE_CsEkBmC_AgXuJeMmEwT_IwDyAkJeDuHmCgDmAmCy@{Cy@cDu@}Cm@yCe@sC]uCYoG_@}EK{GAsL@wDCeGOgECkHCyJAoL@gQEsK?_MLaBLyAT_@J{@TeBv@qBtAaEdEyIxI}ErEYV}JfJmDfByDbAwCb@cEFse@CY?iWC}ECuI?mHA}SCgM?_EGyCUyGy@oCm@cCm@aCw@qPgHsD}Akq@oYkF}B_i@}TsFeCmY}LqImDmBq@}Cu@sCa@{AI{D?sBLu@LwBb@iC~@mClAsGvCeEzBcAt@{@t@y@v@cBxBeAbB[r@}@pCaEbSeS|fAkArGeEnTmCpN{BxK"
-         },
-         "summary" : "Võ Chí Công và Võ Nguyên Giáp",
-         "warnings" : [],
-         "waypoint_order" : []
-      }
-   ],
-   "status" : "OK",
-   "time" : ""
-}
+         ]
