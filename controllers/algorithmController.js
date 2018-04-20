@@ -40,7 +40,7 @@ var http = require('http');
 				}
 			}
 			if(temp.length){
-				this.get_total_guest(stats,arrayTemp,amount,ticketList[i],amountArray,start_location,end_location );
+				this.get_total_guest(stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location, temp, i);
 			}
 		}
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
@@ -194,7 +194,7 @@ var http = require('http');
 		}
 	}
 
-	exports.get_total_guest = function (stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location ){
+	exports.get_total_guest = function (stats,arrayTemp,amount,ticketList,amountArray,start_location,end_location, temp, i ){
 				stats[stats.length] = {
 					trip_transplant : temp
 				}
