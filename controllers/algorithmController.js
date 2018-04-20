@@ -12,8 +12,7 @@ var http = require('http');
 			var temp = [];
 			var amount = 0;
 			var check_i = this.check(i ,arrayTemp);
-			if(!check_i){
-				if(ticketList[i].merged == 'false'){
+			if((!check_i) && (ticketList[i].merged == 'false')){
 					for(var j = 0; j < ticketList.length; j++){
 						var check_j = this.check(j ,arrayTemp);
 						var dj = new Date(ticketList[j].time);
@@ -60,7 +59,6 @@ var http = require('http');
 							}
 						}					
 					}
-				}
 			}
 			if(temp.length){
 				temp.push({trip : i});
