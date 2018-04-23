@@ -1,0 +1,262 @@
+[
+   {
+      "distance": {
+         "text": "26,7 km",
+         "value": 26664
+      },
+      "duration": {
+         "text": "35 phút",
+         "value": 2108
+      },
+      "end_address": "1 Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội, Việt Nam",
+      "end_location": {
+         "lat": 21.021563,
+         "lng": 105.809044
+      },
+      "start_address": "Sảnh B, Phú Cường, Sóc Sơn, Hà Nội, Việt Nam",
+      "start_location": {
+         "lat": 21.214445,
+         "lng": 105.80265
+      },
+      "steps": [
+         {
+            "distance": {
+               "text": "0,2 km",
+               "value": 190
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 57
+            },
+            "end_location": {
+               "lat": 21.21388,
+               "lng": 105.801346
+            },
+            "html_instructions": "Đi về hướng <b>Tây<\/b>",
+            "polyline": {
+               "points": "imn`CqqwdS_@hBCRAH@Z@FDHBFDHJFHDNHLFLDF@LBJD^H"
+            },
+            "start_location": {
+               "lat": 21.214445,
+               "lng": 105.80265
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "2,3 km",
+               "value": 2275
+            },
+            "duration": {
+               "text": "4 phút",
+               "value": 255
+            },
+            "end_location": {
+               "lat": 21.208792,
+               "lng": 105.816376
+            },
+            "html_instructions": "Rẽ <b>phải<\/b><div style=\"font-size:0.9em\">Băng qua Trung tâm Khai thác Bưu chính quốc tế - Bưu điện Thành phố Hà Nội (ở bên trái cách 1,4&nbsp;km)<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "win`CmiwdS@D@DBJ?L?H?HqBpLCRLNPPz@VRaAlBwJpA_HdAoFlAsG`@}BTkAtBaKTkANs@d@yBd@cCPaA^qBdCyM~@cFfBcJb@yB"
+            },
+            "start_location": {
+               "lat": 21.21388,
+               "lng": 105.801346
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "11,4 km",
+               "value": 11420
+            },
+            "duration": {
+               "text": "10 phút",
+               "value": 596
+            },
+            "end_location": {
+               "lat": 21.12333,
+               "lng": 105.82696
+            },
+            "html_instructions": "Tiếp tục vào <b>Võ Nguyên Giáp<\/b><div style=\"font-size:0.9em\">Băng qua Nhà Hàng Thảo Huy (ở phía bên phải)<\/div>",
+            "polyline": {
+               "points": "}im`CkgzdSReALu@xOg|@DYFWpAiHVgCTqAPs@Lk@ZcA\\eAHQL[N]Vc@Xe@T]Xc@RU~AeBn@k@n@e@t@c@j@]~FsCnDcBlAk@zAo@bAYx@OxB[zAOpBEvBFjBN~ATjBd@xAd@dEfBtD~AzFbClPdHZJXLbDtAZNVLVL~\\|NzIrDl@Vl@VjDxAhl@|VfDnAvDbBrJhEfEzAxAd@tBh@`E~@tEp@`@D^DpAHdBJnCFbD@bFApG?pKDrD?rD@j@?nA?v@?lC@x@@V?T?h\\FL@J?rD?db@DxBEhBU|ASfAW~Ao@vAq@|AaAfAaArDgD|BwBHIJKlP{OnBqBpAoAbCgBdBs@VGZK|AWtAK^Az@A^AdEDpCBjK@~OB"
+            },
+            "start_location": {
+               "lat": 21.208792,
+               "lng": 105.816376
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,7 km",
+               "value": 682
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 38
+            },
+            "end_location": {
+               "lat": 21.117197,
+               "lng": 105.82692
+            },
+            "html_instructions": "Tiếp tục đi thẳng để vào <b>Võ Nguyên Giáp<\/b><div style=\"font-size:0.9em\">Băng qua Family Airport Hotel (ở phía bên phải)<\/div>",
+            "maneuver": "straight",
+            "polyline": {
+               "points": "ys|_Coi|dSxMJpACrC?zB?vB?x@?bB?vB?"
+            },
+            "start_location": {
+               "lat": 21.12333,
+               "lng": 105.82696
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "8,7 km",
+               "value": 8706
+            },
+            "duration": {
+               "text": "10 phút",
+               "value": 629
+            },
+            "end_location": {
+               "lat": 21.043848,
+               "lng": 105.80599
+            },
+            "html_instructions": "Tiếp tục vào <b>Cầu Nhật Tân<\/b>/<b>Võ Chí Công<\/b><div style=\"font-size:0.9em\">Đi tiếp tục theo Võ Chí Công<\/div><div style=\"font-size:0.9em\">Băng qua Chung Cư Ia25 Ciputra (ở bên trái cách 4,1&nbsp;km)<\/div>",
+            "polyline": {
+               "points": "om{_Cgi|dST?hAA`@?TA^A\\AlACdAEb@Af@AV?ZAbB?dA?dA?bAAdB?hB?jA?Z?nA@|A?hA@dABx@Bt@Bx@Dt@D|@Fr@Fz@FdAJn@Hj@F^D`@FzATtARxAXhB^vAZrA\\`Bd@fAZ|@Xz@Xx@ZzDvA~NnFj[bL|Af@nTxHRJrJhDtDrAjA`@vClAxAn@tCxAvIzExC~ADBh@RnHjEbAh@TJt@`@pCzA`@TrGjDpDnBpBdAnAj@\\NtCz@THPFfD`AlEpAF@PFrIfCnBj@bA`@lAf@hEfBnD|AfAd@hD|AbD|A|Az@`Ad@zAx@b@\\dAn@fAj@nCtAZLh@P^J`@LB?TFf@FXBf@Dt@B~B?nP?~G@~@?xGAjA@xDAfF@bDAxBEbBI|AI~@MhAQnAWTEPEv@MZITEPC`AYl@Q`Du@|@S|@QHAdAS`@GnAS|AKnAA~@Az@A"
+            },
+            "start_location": {
+               "lat": 21.117197,
+               "lng": 105.82692
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "1,4 km",
+               "value": 1411
+            },
+            "duration": {
+               "text": "2 phút",
+               "value": 104
+            },
+            "end_location": {
+               "lat": 21.032112,
+               "lng": 105.80348
+            },
+            "html_instructions": "Tiếp tục vào <b>Đường vành đai 2<\/b>",
+            "polyline": {
+               "points": "acm_CmfxdSnDBjACbAIh@ETE`AKjAUdB[zAYjAYhBSt@Gr@CjB@nA@p@Bj@D`AL`@Fz@Xx@\\fAn@~@j@t@d@dBfAnAr@pAt@vBlAnAr@zA|@|AlA"
+            },
+            "start_location": {
+               "lat": 21.043848,
+               "lng": 105.80599
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,3 km",
+               "value": 293
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 49
+            },
+            "end_location": {
+               "lat": 21.030165,
+               "lng": 105.80161
+            },
+            "html_instructions": "Đi theo lối ra vào <b>Đường Bưởi<\/b>",
+            "maneuver": "ramp-right",
+            "polyline": {
+               "points": "uyj_CwvwdSHPlB~AnAdApAlALV|AvA"
+            },
+            "start_location": {
+               "lat": 21.032112,
+               "lng": 105.80348
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,5 km",
+               "value": 469
+            },
+            "duration": {
+               "text": "2 phút",
+               "value": 92
+            },
+            "end_location": {
+               "lat": 21.028284,
+               "lng": 105.805275
+            },
+            "html_instructions": "Rẽ <b>trái<\/b> vào <b>Cầu Giấy<\/b>/<b>Kim Mã<\/b><div style=\"font-size:0.9em\">Băng qua Trung Tâm Bảo Dưỡng Xe Máy Thailan Motor (ở phía bên phải)<\/div>",
+            "maneuver": "turn-left",
+            "polyline": {
+               "points": "omj_CakwdSVPz@gALORWRQHIzAwD|AgEt@qBDQ@O@SAOSk@"
+            },
+            "start_location": {
+               "lat": 21.030165,
+               "lng": 105.80161
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,8 km",
+               "value": 763
+            },
+            "duration": {
+               "text": "3 phút",
+               "value": 180
+            },
+            "end_location": {
+               "lat": 21.025131,
+               "lng": 105.81118
+            },
+            "html_instructions": "Tiếp tục đi thẳng qua bãi đỗ xe Buýt Cầu Giấy vào <b>La Thành<\/b>/<b>Đê la Thành<\/b><div style=\"font-size:0.9em\">Băng qua Trần Nhà Bằng Gỗ Tự Nhiên Đẹp Nhất - Tín Thành (ở phía bên trái)<\/div>",
+            "maneuver": "straight",
+            "polyline": {
+               "points": "waj_C_bxdSQ_@EKAQCc@H}@ReBTqANoA^gDPq@Je@Tm@Ra@NWNUDIHIZYp@i@nCeB~D_DXW"
+            },
+            "start_location": {
+               "lat": 21.028284,
+               "lng": 105.805275
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,5 km",
+               "value": 455
+            },
+            "duration": {
+               "text": "2 phút",
+               "value": 108
+            },
+            "end_location": {
+               "lat": 21.021563,
+               "lng": 105.809044
+            },
+            "html_instructions": "Rẽ <b>phải<\/b> tại Vé Việt ticketing company vào <b>Nguyễn Chí Thanh<\/b><div style=\"font-size:0.9em\">Băng qua Cửa hàng Đồ cho bé Tường Nhi (ở phía bên phải)<\/div><div style=\"font-size:0.9em\">Điểm đến sẽ ở bên phải<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "ani_C{fydSz@j@tDlBdAh@LH`@Pv@\\RLNFRJZPJDb@RrBbAp@X"
+            },
+            "start_location": {
+               "lat": 21.025131,
+               "lng": 105.81118
+            },
+            "travel_mode": "DRIVING"
+         }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+   }
+]

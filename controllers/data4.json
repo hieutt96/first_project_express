@@ -1,0 +1,404 @@
+[
+   {
+      "distance": {
+         "text": "25,6 km",
+         "value": 25635
+      },
+      "duration": {
+         "text": "40 phút",
+         "value": 2370
+      },
+      "end_address": "Sảnh B, Phú Cường, Sóc Sơn, Hà Nội, Việt Nam",
+      "end_location": {
+         "lat": 21.214445,
+         "lng": 105.80265
+      },
+      "start_address": "11 Bát Đàn, Hàng Bồ, Hoàn Kiếm, Hà Nội, Việt Nam",
+      "start_location": {
+         "lat": 21.033762,
+         "lng": 105.84762
+      },
+      "steps": [
+         {
+            "distance": {
+               "text": "0,2 km",
+               "value": 181
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 65
+            },
+            "end_location": {
+               "lat": 21.033619,
+               "lng": 105.84587
+            },
+            "html_instructions": "Đi về hướng <b>Tây<\/b> lên <b>Bát Đàn<\/b> về phía <b>Bát Sứ<\/b><div style=\"font-size:0.9em\">Băng qua Techcom Bank (ở phía bên phải)<\/div>",
+            "polyline": {
+               "points": "_dk_Cqj`eSDhABt@PzE"
+            },
+            "start_location": {
+               "lat": 21.033762,
+               "lng": 105.84762
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,1 km",
+               "value": 105
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 28
+            },
+            "end_location": {
+               "lat": 21.03455,
+               "lng": 105.845695
+            },
+            "html_instructions": "Rẽ <b>phải<\/b> tại Bia Hơi Ngọc Linh vào <b>Đường Thành<\/b><div style=\"font-size:0.9em\">Băng qua Ngân Hàng Tmcp Phát Triển Tp.Hcm (Hdbank) - Pgd Cửa Đông (ở phía bên phải)<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "cck_Cu_`eSQDgDZ"
+            },
+            "start_location": {
+               "lat": 21.033619,
+               "lng": 105.84587
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,3 km",
+               "value": 335
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 71
+            },
+            "end_location": {
+               "lat": 21.03737,
+               "lng": 105.84604
+            },
+            "html_instructions": "Chếch sang <b>phải<\/b> tại Nhà May Minh Quang vào <b>Phùng Hưng<\/b><div style=\"font-size:0.9em\">Băng qua Cửa Hàng Vải Minh Nghĩa (ở phía bên trái)<\/div>",
+            "maneuver": "turn-slight-right",
+            "polyline": {
+               "points": "}hk_Cs~_eSYEkBU{AScE]gC[Ed@"
+            },
+            "start_location": {
+               "lat": 21.03455,
+               "lng": 105.845695
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,3 km",
+               "value": 280
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 68
+            },
+            "end_location": {
+               "lat": 21.039791,
+               "lng": 105.846725
+            },
+            "html_instructions": "Rẽ <b>phải<\/b> tại aha Cafe để vào <b>Phùng Hưng<\/b><div style=\"font-size:0.9em\">Băng qua Báo Người Lao Động (ở phía bên phải)<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "qzk_Cw``eSOE[I_A]w@[OGUEYA_Gm@"
+            },
+            "start_location": {
+               "lat": 21.03737,
+               "lng": 105.84604
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "54 m",
+               "value": 54
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 24
+            },
+            "end_location": {
+               "lat": 21.039925,
+               "lng": 105.847206
+            },
+            "html_instructions": "Rẽ <b>phải<\/b> tại Super Hotel Hanoi Old Quarter vào <b>Phan Đình Phùng<\/b><div style=\"font-size:0.9em\">Băng qua Royal Tea (ở phía bên phải)<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "uil_C_e`eSCk@?EACAESe@"
+            },
+            "start_location": {
+               "lat": 21.039791,
+               "lng": 105.846725
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,3 km",
+               "value": 291
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 86
+            },
+            "end_location": {
+               "lat": 21.040651,
+               "lng": 105.8499
+            },
+            "html_instructions": "Tại Cửa Hàng Văn Phòng Phẩm Ah, tiếp tục vào <b>Hàng Đậu<\/b><div style=\"font-size:0.9em\">Băng qua Bốt nước Hàng Đậu (ở phía bên trái)<\/div>",
+            "polyline": {
+               "points": "qjl_Cah`eSUaBACQ}@]kBc@_Cc@iC"
+            },
+            "start_location": {
+               "lat": 21.039925,
+               "lng": 105.847206
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,2 km",
+               "value": 166
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 38
+            },
+            "end_location": {
+               "lat": 21.039598,
+               "lng": 105.85104
+            },
+            "html_instructions": "Rẽ <b>phải<\/b> tại Công Ty Cổ Phần Thương Mại Dịch Vụ Tràng Thi vào <b>Trần Nhật Duật<\/b>/<b>Trần Quang Khải<\/b><div style=\"font-size:0.9em\">Băng qua Nhà May Đẹp (ở phía bên trái)<\/div>",
+            "maneuver": "turn-right",
+            "polyline": {
+               "points": "aol_C{x`eSLQpAsAPSnAuANS"
+            },
+            "start_location": {
+               "lat": 21.040651,
+               "lng": 105.8499
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "1,7 km",
+               "value": 1713
+            },
+            "duration": {
+               "text": "5 phút",
+               "value": 279
+            },
+            "end_location": {
+               "lat": 21.050709,
+               "lng": 105.84018
+            },
+            "html_instructions": "Vòng <b>ngược lại<\/b> tại Shop Hoa Quả<div style=\"font-size:0.9em\">Đi tiếp tục theo Yên Phụ<\/div><div style=\"font-size:0.9em\">Băng qua Cà Phê Thanh Hương (ở phía bên trái)<\/div>",
+            "maneuver": "uturn-left",
+            "polyline": {
+               "points": "ohl_C_`aeSy@q@qAdA[ZmB|B}AlBaBdB[^o@v@yCfCg@b@q@l@s@n@g@^_@ZSPe@n@q@~@o@~@{@hAoB|CuB|BoAvAQRaA`AeDvC}CpCQN{ArA{@v@gA`AcA`A_Az@"
+            },
+            "start_location": {
+               "lat": 21.039598,
+               "lng": 105.85104
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "1,1 km",
+               "value": 1108
+            },
+            "duration": {
+               "text": "3 phút",
+               "value": 152
+            },
+            "end_location": {
+               "lat": 21.058992,
+               "lng": 105.834404
+            },
+            "html_instructions": "Tiếp tục vào <b>Nghi Tàm<\/b><div style=\"font-size:0.9em\">Băng qua Cửa Hàng Đồ Gỗ - Đồ Đồng Phúc Đức (ở bên phải cách 400&nbsp;m)<\/div>",
+            "polyline": {
+               "points": "}mn_Cc|~dSc@V_@Zc@b@u@z@m@r@}@`AaAdAo@l@_Ap@{@f@sEpBsDbBeAf@qAh@u@^oAj@WL}CvAoB~@a@T_@ZKHeBrA"
+            },
+            "start_location": {
+               "lat": 21.050709,
+               "lng": 105.84018
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "3,2 km",
+               "value": 3152
+            },
+            "duration": {
+               "text": "7 phút",
+               "value": 443
+            },
+            "end_location": {
+               "lat": 21.081213,
+               "lng": 105.818146
+            },
+            "html_instructions": "Tại Lotus House, tiếp tục vào <b>Âu Cơ<\/b><div style=\"font-size:0.9em\">Băng qua Công Ty Tnhh Phúc Đông Phương (ở phía bên phải)<\/div>",
+            "polyline": {
+               "points": "uap_Cax}dSs@h@c@T_@Pg@Zo@d@q@f@u@l@u@n@GFEPIDg@RaATgAX}@TeCn@wBh@sA\\g@LQFIHMLQROTKPM\\GVCNId@Ix@Az@E|BANANELCHCBCDIHGFeAt@iAz@oCpBkA|@eClB{@p@UHKFq@j@[POHYJ]NYD[Da@BW?wFFuB@}@@y@Ds@F]DMBc@JmA`@o@VYPOJIHQP_@^s@|@a@h@eAzAUZqAjBg@n@aAtAu@`AWZCDe@d@s@r@k@j@KHu@t@u@r@UT[\\WTYRUHiAp@_CvAw@f@SLOJ_Aj@i@ZeBbAwAv@m@^g@Tu@`@"
+            },
+            "start_location": {
+               "lat": 21.058992,
+               "lng": 105.834404
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,1 km",
+               "value": 135
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 26
+            },
+            "end_location": {
+               "lat": 21.082266,
+               "lng": 105.817505
+            },
+            "html_instructions": "Tiếp tục vào <b>An Dương Vương<\/b>",
+            "polyline": {
+               "points": "qlt_CkrzdSSHi@XSJaCnA"
+            },
+            "start_location": {
+               "lat": 21.081213,
+               "lng": 105.818146
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,3 km",
+               "value": 296
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 46
+            },
+            "end_location": {
+               "lat": 21.08263,
+               "lng": 105.81549
+            },
+            "html_instructions": "Rẽ <b>trái<\/b> về hướng <b>Cầu Nhật Tân<\/b>/<b>Võ Chí Công<\/b>",
+            "maneuver": "turn-left",
+            "polyline": {
+               "points": "est_CknzdSA?UNDJ^`A`@dAPj@FVDLDN@N?LAPCLENGPIJKJOHOFQBM?O?e@A"
+            },
+            "start_location": {
+               "lat": 21.082266,
+               "lng": 105.817505
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "4,3 km",
+               "value": 4287
+            },
+            "duration": {
+               "text": "4 phút",
+               "value": 236
+            },
+            "end_location": {
+               "lat": 21.118942,
+               "lng": 105.8273
+            },
+            "html_instructions": "Chếch sang <b>phải<\/b> vào <b>Cầu Nhật Tân<\/b>/<b>Võ Chí Công<\/b><div style=\"font-size:0.9em\">Băng qua Công ty tnhh Chuyển Nha Thành Hưng (ở bên phải cách 2,9&nbsp;km)<\/div>",
+            "maneuver": "turn-slight-right",
+            "polyline": {
+               "points": "mut_CyazdSqNoHwE_CsEkBi@QcBm@yI_DmMuEkIwCyBu@wT_IwDyAsDqAwDsAsDqAaC{@aBm@eA_@gA]eA[gA[sA]yA_@iAUkAWqAUqASgAQoAOcAMaAKsAMaAG}@GoAI_AEs@Cu@Co@AcAAoAAwA?k@AgA@wB?wA?iA?yC@oA?a@?c@Aa@Ai@?mAGoAE}@Ak@Ac@?w@A_A?oAAa@?cDA"
+            },
+            "start_location": {
+               "lat": 21.08263,
+               "lng": 105.81549
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "13,1 km",
+               "value": 13062
+            },
+            "duration": {
+               "text": "12 phút",
+               "value": 708
+            },
+            "end_location": {
+               "lat": 21.21213,
+               "lng": 105.80606
+            },
+            "html_instructions": "Tiếp tục vào <b>Võ Nguyên Giáp<\/b><div style=\"font-size:0.9em\">Băng qua Hanoi airport hostel (ở bên trái cách 5,3&nbsp;km)<\/div>",
+            "polyline": {
+               "points": "kx{_Csk|dSU?wB?aGAoL@gQEsK?_MLi@Bw@HI@oARMDQDQDi@NeBv@qBtA}A|AcBfByIxI}ErEKJMJmDfDoE~DmDfByDbAwCb@cEFy^CyE?K?M?gRAaDAmCAoAAu@?aB?yAAcB@aDAkC?oJ?mHC_GA_A@{@@kAAkBAsAEyAI_AKk@GSCaCYwASsBa@[KcCm@aCw@eEeBkJaEc@SoCiAsi@kUwFcC{DeBo@Wo@YuGqCwXmLaEcBYM[M}As@_Bu@[M[KqIsDcMoFqImDmBq@uBk@g@Ii@KiBUw@Ec@C_B?{A?sBLu@L}@Py@PiC~@mClAC@oGtCwC|Am@\\cAt@{@t@y@v@cBxB_AvAEJMXMXMZo@tB{DlRETGXmPd}@UpAy@jEEXeAxFy@bEkCjNc@|BOt@kAfGMt@WjAeBvI"
+            },
+            "start_location": {
+               "lat": 21.118942,
+               "lng": 105.8273
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "23 m",
+               "value": 23
+            },
+            "duration": {
+               "text": "1 phút",
+               "value": 3
+            },
+            "end_location": {
+               "lat": 21.212284,
+               "lng": 105.80591
+            },
+            "html_instructions": "Chếch sang <b>bên phải<\/b>",
+            "maneuver": "turn-slight-right",
+            "polyline": {
+               "points": "y~m`C{fxdS]\\"
+            },
+            "start_location": {
+               "lat": 21.21213,
+               "lng": 105.80606
+            },
+            "travel_mode": "DRIVING"
+         },
+         {
+            "distance": {
+               "text": "0,4 km",
+               "value": 447
+            },
+            "duration": {
+               "text": "2 phút",
+               "value": 97
+            },
+            "end_location": {
+               "lat": 21.214445,
+               "lng": 105.80265
+            },
+            "html_instructions": "Đi thẳng",
+            "maneuver": "straight",
+            "polyline": {
+               "points": "w_n`C}exdS]j@IXOh@gArFG`@GXGJGHQLEDABCDmCf@KDGBYVWXCBCDCFCPOn@"
+            },
+            "start_location": {
+               "lat": 21.212284,
+               "lng": 105.80591
+            },
+            "travel_mode": "DRIVING"
+         }
+      ],
+      "traffic_speed_entry": [],
+      "via_waypoint": []
+   }
+]

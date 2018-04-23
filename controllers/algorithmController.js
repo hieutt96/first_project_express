@@ -72,7 +72,6 @@ var http = require('http');
 				end_location[end_location.length] = this.get_end_location(ticketList[i]);
 			}
 		}
-		console.log(arrayTemp);
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
 	}
 
