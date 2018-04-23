@@ -27,8 +27,8 @@ var http = require('http');
 									time += ticketList[i]['data'][k].time ;
 									k++;
 								}
-								while(ticketList[i]['data'][k].marker == min.min_start.end);
-										if(time < this.minTime*60000){
+								while(k < min.min_start.step_index+1 );
+										if(time < this.minTime*60){
 											var cost = ticketList[i].cost + ticketList[j].cost ;
 											if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
 											{
@@ -105,7 +105,7 @@ var http = require('http');
 		var end_location_transplant = data1[data1.length-1].marker;
 		var stats = {};
 		for(var i = 0 ; i < data.length ; i++){
-			var distance_start_location_transplant = this.distance(start_location_transplant,data[i].marker);
+			var distance_start_location_transplant = this.distance(data[i].marker,start_location_transplant);
 			if(min_start_location_transplant > distance_start_location_transplant) {
 				min_start_location_transplant = distance_start_location_transplant;
 				stats.min_start = {
@@ -116,7 +116,7 @@ var http = require('http');
 					step_index : i,
 				};
 			}
-			var distance_end_location_transplant = this.distance(end_location_transplant,data[i].marker);
+			var distance_end_location_transplant = this.distance(data[i].marker,end_location_transplant);
 			if(min_end_location_transplant > distance_end_location_transplant){
 				min_end_location_transplant = distance_end_location_transplant;
 				stats.min_end = {
