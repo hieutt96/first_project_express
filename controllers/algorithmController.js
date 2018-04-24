@@ -30,30 +30,7 @@ var http = require('http');
 								while(k < min.min_start.step_index+1 );
 										if(time < this.minTime*60){
 											var cost = ticketList[i].cost + ticketList[j].cost ;
-											if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
-											{
-												if( cost >= 210000){
-													temp.push({ trip : j ,data : min });
-													arrayTemp.push(j);
-													amount += parseInt(ticketList[j].amount);
-												}
-											}
-											else if((di.getHours() > 8 && (di.getHours() <= 16 && di.getMinutes() < 31) ) || (dj.getHours() > 8 && (dj.getHours() <= 16 && dj.getMinutes() < 31) ))
-											{
-												if( cost >= 200000){
-													temp.push({ trip : j ,data : min });
-													arrayTemp.push(j);
-													amount += parseInt(ticketList[j].amount);
-												}
-											}
-											else
-											{
-												if( cost >= 180000){
-													temp.push({ trip : j ,data : min });
-													arrayTemp.push(j);
-													amount += parseInt(ticketList[j].amount);
-												}
-											}
+											this.get_time_cost(di, dj, cost, temp, arrayTemp, amount, ticketList[j], j, min);
 										}
 								}
 							}
@@ -193,4 +170,30 @@ var http = require('http');
 			}
 		}
 		return false;
+	}
+	exports.get_time_cost = function(di, dj, cost, temp, arrayTemp, amount, ticketList, j, min){
+		if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
+		{
+			if( cost >= 210000){
+				temp.push({ trip : j ,data : min });
+				arrayTemp.push(j);
+				amount += parseInt(ticketList.amount);
+			}
+		}
+		else if((di.getHours() > 8 && (di.getHours() <= 16 && di.getMinutes() < 31) ) || (dj.getHours() > 8 && (dj.getHours() <= 16 && dj.getMinutes() < 31) ))
+		{
+			if( cost >= 200000){
+				temp.push({ trip : j ,data : min });
+				arrayTemp.push(j);
+				amount += parseInt(ticketList.amount);
+			}
+		}
+		else
+		{
+			if( cost >= 180000){
+				temp.push({ trip : j ,data : min });
+				arrayTemp.push(j);
+				amount += parseInt(ticketList.amount);
+			}
+		}
 	}
