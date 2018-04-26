@@ -1,6 +1,9 @@
 var http = require('http');
+	exports.miniseconds = 30*60000;
+	exports.s = 60;
 	exports.minTime = 0;
 	exports.minLength = 0;
+	exports.radian = 180;
 	exports.transplant = function (ticketList){
 		var amountArray = [];
 		var start_location = [];
@@ -13,40 +16,26 @@ var http = require('http');
 			var amount = 0;
 			var check_i = this.check(i ,arrayTemp);
 			if((!check_i) && (ticketList[i].merged == 'false')){
-					for(var j = 0; j < ticketList.length; j++){
-						var check_j = this.check(j ,arrayTemp);
-						var dj = new Date(ticketList[j].time);
-						if( i!=j && (ticketList[j].merged == 'false') && !check_j){
-							if( Math.abs(ticketList[i].time - ticketList[j].time) < 30*60000) {
-							var min = this.find_min(ticketList[i].data, ticketList[j].data);
-							var time = min.min_start.time;
-							if(min.min_start.length <= this.minLength && min.min_end.length <= this.minLength) {															
-								var k = 0;
-								
-								do {
-									time += ticketList[i]['data'][k].time ;
-									k++;
-								}
-								while(k < min.min_start.step_index+1 );
-										if(time < this.minTime*60){
-											var cost = ticketList[i].cost + ticketList[j].cost ;
-											this.get_time_cost(di, dj, cost, temp, arrayTemp, amount, ticketList[j], j, min);
-										}
+				for(var j = 0; j < ticketList.length; j++){
+					var check_j = this.check(j ,arrayTemp);
+					var dj = new Date(ticketList[j].time);
+					if( i!=j && (ticketList[j].merged == 'false') && !check_j){
+						if( Math.abs(ticketList[i].time - ticketList[j].time) < this.miniseconds) {
+						var min = this.find_min(ticketList[i].data, ticketList[j].data);
+						var time = min.min_start.time;
+						if(min.min_start.length <= this.minLength && min.min_end.length <= this.minLength) {
+								time = this.cal_time(time, ticketList[i], min);
+								if(time < this.minTime*this.s){
+									var cost = ticketList[i].cost + ticketList[j].cost ;
+									this.get_time_cost(di, dj, cost, temp, arrayTemp, amount, ticketList[j], j, min);
 								}
 							}
-						}					
-					}
+						}
+					}					
+				}
 			}
 			if(temp.length){
-				temp.push({trip : i});
-				stats[stats.length] = {
-					trip_transplant : temp
-				}
-				arrayTemp.push(i);
-				amount += parseInt(ticketList[i].amount);
-				amountArray[amountArray.length] = amount;
-				start_location[start_location.length] = this.get_start_location(ticketList[i]);
-				end_location[end_location.length] = this.get_end_location(ticketList[i]);
+				this.add_trip_transplant(temp, i, stats, arrayTemp, ticketList[i], amount, amountArray, start_location, end_location);
 			}
 		}
 	return {stats: stats, amount : amountArray, start_location : start_location, end_location :end_location };
@@ -89,7 +78,7 @@ var http = require('http');
 					start: start_location_transplant,
 					end: data[i].marker,
 					length: min_start_location_transplant,
-					time :min_start_location_transplant/1000/30*3600,
+					time :min_start_location_transplant*13/10/1000/30*3600,
 					step_index : i,
 				};
 			}
@@ -100,7 +89,7 @@ var http = require('http');
 					start: end_location_transplant,
 					end: data[i].marker,
 					length: min_end_location_transplant,
-					time : min_end_location_transplant/1000/30*3600,
+					time : min_end_location_transplant*13/10/1000/30*3600,
 					step_index : i,
 				};
 			}
@@ -121,7 +110,7 @@ var http = require('http');
 	}
 
 	exports.rad = function rad(x) {
-	    return x * Math.PI / 180;
+	    return x * Math.PI / this.radian;
 	}
 
 	exports.get_start_location = function (ticket){
@@ -171,7 +160,7 @@ var http = require('http');
 		}
 		return false;
 	}
-	exports.get_time_cost = function(di, dj, cost, temp, arrayTemp, amount, ticketList, j, min){
+	exports.get_time_cost = function(di, dj, cost, temp, arrayTemp, amount, ticketList, j, min) {
 		if((di.getHours() > 2 && di.getHours() < 10 ) || (dj.getHours() > 2 && dj.getHours() < 10))
 		{
 			if( cost >= 210000){
@@ -196,4 +185,27 @@ var http = require('http');
 				amount += parseInt(ticketList.amount);
 			}
 		}
+	}
+
+	exports.add_trip_transplant = function(temp, i, stats, arrayTemp, ticketList, amount, amountArray, start_location, end_location){
+				temp.push({trip : i});
+				stats[stats.length] = {
+					trip_transplant : temp
+				}
+				arrayTemp.push(i);
+				amount += parseInt(ticketList.amount);
+				amountArray[amountArray.length] = amount;
+				start_location[start_location.length] = this.get_start_location(ticketList);
+				end_location[end_location.length] = this.get_end_location(ticketList);
+	}
+
+	exports.cal_time = function(time, ticketList, min){
+		var k = 0;
+		
+		do {
+			time += ticketList['data'][k].time ;
+			k++;
+		}
+		while(k < min.min_start.step_index+1 );
+		return time;
 	}
